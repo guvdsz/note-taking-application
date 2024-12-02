@@ -147,6 +147,7 @@ openCreateNoteModal.addEventListener("click", () => {
 });
 createNoteBtn.addEventListener("click", (e) => {
 	e.preventDefault();
+    if (!noteContentInput.value) return;
     createNote(noteContentInput.value);
     noteContentInput.value = "";  
     modalWindow.classList.remove("open-modal");
