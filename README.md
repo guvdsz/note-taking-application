@@ -1,2 +1,1 @@
-# note-taking-application
- A minimalist and useful note-taking application.
+Acesss here: https://guvdsz.github.io/note-taking-application/
