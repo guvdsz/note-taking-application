@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+			integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<script src="script.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>DevControl</title>
+	</head>
+	<body>
+		<nav class="sidebar">
+			<div class="user">
+				<img src="img/defaultProfileImage.jpg" alt="Avatar" class="user-img" />
+				<p class="user-info">
+					<span class="company-name text"> DevControl </span>
+					<span class="user-name text"> User </span>
+				</p>
+			</div>
+			<div class="sidebar-menu">
+				<ul class="menu-items">
+					<li class="menu-item create">
+						<a href="#">
+							<i class="fa-solid fa-plus"></i>
+							<span class="text">New Note</span>
+						</a>
+					</li>
+					<li class="menu-item csv-btn">
+						<a href="#">
+							<i class="fa-solid fa-file-csv"></i>
+							<span class="text">Export to CSV</span>
+						</a>
+					</li>
+				</ul>
+				<button class="toggle-menu">
+					<i class="fa-solid fa-chevron-right"></i>
+				</button>
+			</div>
+		</nav>
+		<main>
+			<h1>Welcome back, User!</h1>
+			<span class="my-projects">
+				<i class="fa-regular fa-file"></i>
+				<p>My Notes</p>
+			</span>
+			<div class="search-bar">
+				<input
+					type="text"
+					name="search"
+					id="search"
+					placeholder="Search for notes"
+					class="search-input"
+					autocomplete="off"
+				/>
+			</div>
+			<div class="notes-container">
+			</div>
+			<div class="modal-window">
+				<div class="create-note-modal">
+					<form class="create-note">
+						<h2>Create a new note</h2>
+						<textarea
+							name="content"
+							spellcheck="false"
+							id="content"
+							placeholder="Note"
+							class="note-content-input"></textarea>
+						<button type="submit" class="create-note-btn">Create</button>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
