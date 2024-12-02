@@ -186,7 +186,6 @@ csvBtn.addEventListener("click", () => {
         ["Id","Content", "Pinned"], 
         ...savedNotes.map((note) => [note.id, note.content, note.pinned]),
     ].map((e) => e.join(",")).join("\n");
-    console.log(csvString)
     const link = document.createElement("a");
     link.target = "_blank";
     link.href = "data:text/csv;charset=utf-8," + encodeURIComponent(csvString);
